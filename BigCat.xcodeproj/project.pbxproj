@@ -15,6 +15,10 @@
 		D991368825D8312300D92481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D991368625D8312300D92481 /* LaunchScreen.storyboard */; };
 		D991369325D8312400D92481 /* BigCatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D991369225D8312400D92481 /* BigCatTests.swift */; };
 		D991369E25D8312400D92481 /* BigCatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D991369D25D8312400D92481 /* BigCatUITests.swift */; };
+		D99136C225D8321000D92481 /* BigCatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99136C025D8321000D92481 /* BigCatTableViewCell.swift */; };
+		D99136C325D8321000D92481 /* BigCatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99136C125D8321000D92481 /* BigCatTableViewCell.xib */; };
+		D99136CB25D83FAE00D92481 /* BigCatStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99136CA25D83FAE00D92481 /* BigCatStructure.swift */; };
+		D99136D025D84ECF00D92481 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99136CF25D84ECF00D92481 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		D991369925D8312400D92481 /* BigCatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigCatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D991369D25D8312400D92481 /* BigCatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigCatUITests.swift; sourceTree = "<group>"; };
 		D991369F25D8312400D92481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D99136C025D8321000D92481 /* BigCatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigCatTableViewCell.swift; sourceTree = "<group>"; };
+		D99136C125D8321000D92481 /* BigCatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BigCatTableViewCell.xib; sourceTree = "<group>"; };
+		D99136CA25D83FAE00D92481 /* BigCatStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigCatStructure.swift; sourceTree = "<group>"; };
+		D99136CF25D84ECF00D92481 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D94FFBD125D90ABE00B6136C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D99136CA25D83FAE00D92481 /* BigCatStructure.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D94FFBD225D90AD500B6136C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D991368125D8311E00D92481 /* Main.storyboard */,
+				D99136C125D8321000D92481 /* BigCatTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D94FFBD425D90B0900B6136C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D99136C025D8321000D92481 /* BigCatTableViewCell.swift */,
+				D991367F25D8311E00D92481 /* ViewController.swift */,
+				D99136CF25D84ECF00D92481 /* ImageViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		D991366F25D8311E00D92481 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +134,11 @@
 		D991367A25D8311E00D92481 /* BigCat */ = {
 			isa = PBXGroup;
 			children = (
+				D94FFBD125D90ABE00B6136C /* Model */,
+				D94FFBD225D90AD500B6136C /* View */,
+				D94FFBD425D90B0900B6136C /* Controller */,
 				D991367B25D8311E00D92481 /* AppDelegate.swift */,
 				D991367D25D8311E00D92481 /* SceneDelegate.swift */,
-				D991367F25D8311E00D92481 /* ViewController.swift */,
-				D991368125D8311E00D92481 /* Main.storyboard */,
 				D991368425D8312300D92481 /* Assets.xcassets */,
 				D991368625D8312300D92481 /* LaunchScreen.storyboard */,
 				D991368925D8312300D92481 /* Info.plist */,
@@ -232,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D991368825D8312300D92481 /* LaunchScreen.storyboard in Resources */,
+				D99136C325D8321000D92481 /* BigCatTableViewCell.xib in Resources */,
 				D991368525D8312300D92481 /* Assets.xcassets in Resources */,
 				D991368325D8311E00D92481 /* Main.storyboard in Resources */,
 			);
@@ -258,8 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D99136CB25D83FAE00D92481 /* BigCatStructure.swift in Sources */,
 				D991368025D8311E00D92481 /* ViewController.swift in Sources */,
+				D99136C225D8321000D92481 /* BigCatTableViewCell.swift in Sources */,
 				D991367C25D8311E00D92481 /* AppDelegate.swift in Sources */,
+				D99136D025D84ECF00D92481 /* ImageViewController.swift in Sources */,
 				D991367E25D8311E00D92481 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
